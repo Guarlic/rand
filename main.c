@@ -19,13 +19,13 @@ int main(void) {
 start:
     for (int i = 0; i < 20; i++) printf("\n");
 
-    for (int i = 0; i < 20; i++) printf("\t"); printf("---------------------------\n");
-    for (int i = 0; i < 20; i++) printf("\t"); printf("|                         |\n");
-    for (int i = 0; i < 20; i++) printf("\t"); printf("|       Random Game       |\n");
-    for (int i = 0; i < 20; i++) printf("\t"); printf("|                         |\n");
-    for (int i = 0; i < 20; i++) printf("\t"); printf("|    Made By Hyunu Jung   |\n");
-    for (int i = 0; i < 20; i++) printf("\t"); printf("|                         |\n");
-    for (int i = 0; i < 20; i++) printf("\t"); printf("---------------------------\n");
+    for (int i = 0; i < 20; i++) printf("\t"); printf("  ---------------------------\n");
+    for (int i = 0; i < 20; i++) printf("\t"); printf("  |                         |\n");
+    for (int i = 0; i < 20; i++) printf("\t"); printf("  |       Random Game       |\n");
+    for (int i = 0; i < 20; i++) printf("\t"); printf("  |                         |\n");
+    for (int i = 0; i < 20; i++) printf("\t"); printf("  |    Made By Hyunu Jung   |\n");
+    for (int i = 0; i < 20; i++) printf("\t"); printf("  |                         |\n");
+    for (int i = 0; i < 20; i++) printf("\t"); printf("  ---------------------------\n");
 
     for (int i = 0; i < 20; i++) printf("\n");
 
