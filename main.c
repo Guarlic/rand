@@ -13,7 +13,7 @@ int pick(unsigned _Start, unsigned _End) {
 int main(void) {
     int answer;
     int input;
-    int chance = 1;
+    int chance = 0;
     char yesno;
 
 start:
@@ -38,13 +38,6 @@ start:
     while (1) {
         scanf("%d", &input);
 
-        if (chance == 10) {
-            printf("You used all of chance!\n");
-            printf("The Answer was %d\n", answer);
-
-            break;
-        }
-
         if (input == answer) {
             printf("Correct!\n");
             printf("You used %d of chance.\n", chance);
@@ -57,6 +50,13 @@ start:
 
             if (input < answer) printf("Your input is smaller then answer.\n");
             else printf("Your input is bigger then answer.\n");
+        }
+
+        if (chance == 10) {
+            printf("You used all of chance!\n");
+            printf("The Answer was %d\n", answer);
+
+            break;
         }
     }
 
@@ -72,7 +72,7 @@ start:
             printf("GOGO!\n");
             sleep(1);
             answer = pick(1, 100);
-            chance = 1;
+            chance = 0;
             goto start;
         case 'n':
             printf("GG! Good Bye!\n");
@@ -83,7 +83,7 @@ start:
             printf("; Wrong Answer!\n");
             sleep(1);
             answer = pick(1, 100);
-            chance = 1;
+            chance = 0;
             goto start;
     }
 
