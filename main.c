@@ -63,6 +63,7 @@ start:
     system("read");
     system("clear");
 
+yn:
     getchar();
     printf("Do you want to play again?(y/n) ");
     scanf("%c", &yesno);
@@ -82,9 +83,8 @@ start:
         default:
             printf("; Wrong Answer!\n");
             sleep(1);
-            answer = pick(1, 100);
-            chance = 0;
-            goto start;
+            system("clear");
+            goto yn;
     }
 
     return 0;
